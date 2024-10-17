@@ -8,34 +8,6 @@ import { data } from "../data/data";
 export function lowMoonsPlanets(data) {
   // Your code goes here...
 
-  // const lessThanTen = data.planets.filter(function (planet) {
-  //   if (planet.moonsCount < 10 || planet.moonsCount > 0) {
-  //     return planet;
-  //   } else if (planet.moonsCount === 0) {
-  //     return planet;
-  //   }
-  // });
-
-  // return lessThanTen;
-
-  // const lessThanTen = data.planets.filter(function (planet) {
-  //   if (planet.moonsCount) {
-  //     if (planet.moonsCount < 10) {
-  //       return planet;
-  //     }
-  //   }
-  // });
-
-  // const zeroMoons = data.planets.filter(function (planet) {
-  //   if (planet.moonsCount) {
-  //     if (planet.moonsCount === 0) {
-  //       return planet;
-  //     }
-  //   }
-  // });
-
-  // console.log(lessThanTen, zeroMoons);
-
   return data.planets
     .filter((planet) => planet.moons === undefined || planet.moonsCount < 10)
     .map((planet) => planet.name);
