@@ -32,20 +32,6 @@ export function getGreatestDiscoveryYear(data) {
 
   const result = findMax(listByYear);
   return result;
-
-  // function findMax(obj) {
-  //   arrayOfKeys = Object.keys(obj);
-  //   arrayOfValues = Object.values(obj);
-  //   let maxValue = 0;
-  //   let maxYear = "";
-  //   for (let i=0; i<arrayOfKeys.length; i++) {
-  //     if (arrayOfValues[i] > maxValue) {
-  //       maxValue = arrayOfValues[i];
-  //       maxYear = arrayOfKeys[i];
-  //     }
-  //   }
-  //   return parseInt(maxYear);
-  // }
 }
 
 // === TEST YOURSELF ===

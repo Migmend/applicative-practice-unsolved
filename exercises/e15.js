@@ -10,15 +10,6 @@ export function getPlanetsWithNoMoons(data) {
   return data.planets
     .filter((planet) => planet.moons === undefined || planet.moonsCount === 0)
     .map((planet) => planet.name);
-
-  // const planetsNoBitches = data.planets
-  // .map(function() {
-
-  // })
-
-  // .filter(function(planet) {
-  //   return planet.name;
-  // });
 }
 
 // === TEST YOURSELF ===
