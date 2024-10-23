@@ -8,7 +8,6 @@ export function findPlanetNameByMoon(data, moonName) {
   // Your code goes here...
 
   let foundPlanet = data.planets.find(function (planet) {
-    // console.log("this is just planet.moons: ", planet.moons);
     if (planet.moons) {
       if (planet.moons.includes(moonName)) {
         console.log(
